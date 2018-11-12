@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial scale-=1.0, maximun-scale=1.0, minimum-scale=1.0"></head>
+	<link rel="stylesheet" href="estilos.css">
+
+<body>
+	<div class="contenedor">
+		<form action="send.php" method="post" name="contacto" id="contacto" class="form">
+			<div class="form-header">
+				<h1 class="form-title">C<span>ontacto</span></h1>
+			</div>
+			
+			<label for="nombre" class="form-label">Nombre Completo:</label>
+			<input type="text" id="nombre" class="form-input" placeholder="Ingrese su nombre completo">
+
+			<label for="correo" class="form-label">Correo electrónico:</label>
+			<input name="email" type="text" onBlur="MM_validateForm('email','','NisEmail');return document.MM_returnValue" id="correo" class="form-input" placeholder="Ingrese su email">
+
+			<label for="tel" class="form-label">Teléfono:</label>
+			<input name ="tel" type="text" id="tel" class="form-input" placeholder="Ingrese su número celular">
+
+            <input type="submit" class="btn-submit" value="Enviar Formulario"> 
+            <br><br>
+            <input type="submit" class="btn-del" value="Borrar Información"> 
+
+		</form>
+	</div>
+ 	
+</body>
+</html>
